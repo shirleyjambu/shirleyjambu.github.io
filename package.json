@@ -1,0 +1,23 @@
+{
+  "name": "shirleyjambu.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css --recursive",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shirleyjambu/shirleyjambu.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shirleyjambu/shirleyjambu.github.io/issues"
+  },
+  "homepage": "https://github.com/shirleyjambu/shirleyjambu.github.io#readme",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
