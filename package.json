@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css --recursive",
-    "deploy": "gh-pages -d dist"
+    "sass": "node-sass -w scss/ -o portfolio/css --recursive",
+    "deploy": "gh-pages -d portfolio"
   },
   "repository": {
     "type": "git",
