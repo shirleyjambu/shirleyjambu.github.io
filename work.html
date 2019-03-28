@@ -9,6 +9,35 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
   <title>My Work</title>
+  <style>
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+</style>
+
 </head>
 
 <body>
@@ -49,9 +78,10 @@
 
     <div class="projects">
       <div class="item">
-        <a href="#!">
-          <img src="images/project1.jpg" alt="Mortar&Pestel" title="Recipe Search Engine using HTML5, CSS, Materialize, Javascript, JQuery, FireBase DB and FireBase Authentication" />
-        </a>
+        <div class="tooltip"><img src="images/project1.jpg" alt="Mortar&Pestel" />
+          <span class="tooltiptext">Recipe Search Engine using HTML5, CSS, Materialize, Javascript, JQuery, FireBase DB and FireBase Authentication</span>
+        </div>
+        
         <a href="https://shirleyjambu.github.io/MealPrep" target="new" class="btn-light">
           <i class="fas fa-eye"> Mortar & Pestel</i>
         </a>
