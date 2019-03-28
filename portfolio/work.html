@@ -34,14 +34,18 @@
     transition: .5s ease;
   }
 
+  .container:hover .image {
+      opacity: 0.3;
+  }
+  
   .container:hover .overlay {
     bottom: 0;
     height: 100%;
   }
 
   .text {
-    color: white;
-    font-size: 15px;
+    color: #444;
+    font-size: 16px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -49,6 +53,7 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+
   }
   </style>
 
