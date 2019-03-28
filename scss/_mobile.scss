@@ -74,6 +74,15 @@
 
 //Smartphones
 @include mediaSm {
+  h1,
+  h2,
+  h3 {
+      &.lg-heading {
+      font-size: 3rem;
+    }
+
+  }
+
   main #home h1 {
     margin-top: 10vh;
   }
