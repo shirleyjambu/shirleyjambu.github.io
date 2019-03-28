@@ -9,34 +9,48 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
   <title>My Work</title>
+
   <style>
-/* Tooltip container */
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
-}
+  .container {
+    position: relative;
+    width: 50%;
+  }
 
-/* Tooltip text */
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
- 
-  /* Position the tooltip text - see examples below! */
-  position: absolute;
-  z-index: 1;
-}
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
-</style>
+  .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+  }
+
+  .container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  </style>
 
 </head>
 
@@ -78,9 +92,12 @@
 
     <div class="projects">
       <div class="item">
-        <div class="tooltip"><img src="images/project1.jpg" alt="Mortar&Pestel" />
-          <span class="tooltiptext">Recipe Search Engine using HTML5, CSS, Materialize, Javascript, JQuery, FireBase DB and FireBase Authentication</span>
-        </div>
+          <div class="container">
+            <img src="images/project1.jpg" alt="Mortar&Pestel" class="image"/>
+            <div class="overlay">
+              <div class="text">Recipe Search Engine using HTML5, CSS, Materialize, Javascript, JQuery, FireBase DB and FireBase Authentication</div>
+            </div>
+          </div>
         
         <a href="https://shirleyjambu.github.io/MealPrep" target="new" class="btn-light">
           <i class="fas fa-eye"> Mortar & Pestel</i>
