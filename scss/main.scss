@@ -82,6 +82,8 @@ main {
   grid-template-columns: repeat(3, 1fr);
 
   .bio-image {
+    width:200px;
+    height:200px;
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
