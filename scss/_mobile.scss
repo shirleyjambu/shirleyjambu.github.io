@@ -82,15 +82,15 @@
     }
   }
 
-  body {
-    font-size: 2rem;
-  }
-
   main #home h1 {
     margin-top: 10vh;
   }
 
   .projects {
     grid-template-columns: 1fr;
+  }
+
+  .boxes div{
+    font-size: 1rem;
   }
 }

@@ -20,7 +20,6 @@
     transform: rotate(180deg);
 
     .btn-line {
-
       // Rotate line 1 and 2
       &:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
