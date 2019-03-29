@@ -282,6 +282,8 @@ main {
   main {
     align-items: center;
     text-align: center; }
+    main p {
+      text-align: left; }
     main .lg-heading {
       line-height: 1;
       margin-bottom: 1rem; }
