@@ -78,10 +78,11 @@
 
 //Smartphones
 @include mediaSm {
+
   h1,
   h2,
   h3 {
-      &.lg-heading {
+    &.lg-heading {
       font-size: 2rem;
     }
   }
@@ -92,9 +93,15 @@
 
   .projects {
     grid-template-columns: 1fr;
+
+    img {
+      height: 100%;
+    }
+
+
   }
 
-  .boxes div{
+  .boxes div {
     font-size: 1rem;
   }
 }
