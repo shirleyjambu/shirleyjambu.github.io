@@ -99,7 +99,7 @@ body {
   color: #FFF;
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Open Sans Condensed';
   line-height: 1.5; }
   body#bg-img {
     background: url("./../images/background.jpg");
@@ -213,13 +213,14 @@ main {
     overflow: hidden;
     width: 100%;
     height: 0;
-    transition: .5s ease; }
+    transition: .5s ease;
+    font-weight: 600; }
   .projects .container:hover .image {
-    opacity: 0.5; }
+    opacity: 0.9; }
   .projects .container:hover .overlay {
     bottom: 0;
     height: 100%;
-    opacity: 0.8; }
+    opacity: 0.9; }
   .projects .text {
     color: #444;
     font-size: 16px;
@@ -241,7 +242,8 @@ main {
     white-space: nowrap;
     transition: all 0.5s ease-out; }
     .boxes a:hover {
-      color: #ffd300; }
+      color: #ffd300;
+      font-weight: 600; }
   .boxes div {
     font-size: 1.5rem;
     border: 3px #FFF solid;
@@ -252,7 +254,8 @@ main {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
-  margin-bottom: 0.3rem; }
+  margin-bottom: 0.3rem;
+  font-weight: 600; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background: #ffd300;
     color: #000; }
@@ -263,7 +266,7 @@ main {
 
 .btn-light {
   background: #c4c4c4;
-  color: #FFF; }
+  color: #000; }
 
 #main-footer {
   text-align: center;
