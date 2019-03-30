@@ -5,7 +5,7 @@
   right: 35px;
   top: 35px;
   cursor: pointer;
-  @include easeOut;  
+  @include easeOut;
 
   .btn-line {
     width: 28px;
@@ -20,6 +20,7 @@
     transform: rotate(180deg);
 
     .btn-line {
+
       // Rotate line 1 and 2
       &:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
@@ -87,7 +88,7 @@
     .portrait {
       width: 250px;
       height: 250px;
-      background: url('../images/background.jpg');
+      background: url('../images/me.jpg');
       border-radius: 50%;
       border: solid 3px $secondary-color;
       background-size: cover;
@@ -124,7 +125,7 @@
   }
 }
 
-//Delay nav itme slide
+//Delay nav item slide
 @for $x from 1 through 4 {
   .nav-item:nth-child(#{$x}) {
     transition-delay: $x * 0.1s;
